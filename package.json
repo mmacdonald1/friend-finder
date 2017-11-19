@@ -2,16 +2,17 @@
   "name": "friend-finder",
   "version": "1.0.0",
   "description": "dating app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmacdonald1/friend-finder.git"
   },
   "keywords": [
-    "friends"
+    "friend"
   ],
   "author": "Melanie MacDonald",
   "license": "ISC",
