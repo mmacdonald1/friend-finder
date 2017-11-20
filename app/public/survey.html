@@ -39,12 +39,12 @@
             <form role="form">
 
               <div class="form-group">
-                <label for="friend-name">Name (Required)</label>
+                <label for="friend-name" id="friend-name">Name (Required)</label>
                 <input type="text" class="form-control" id="user-name">
               </div>
 
               <div class="form-group">
-                <label for="friend-photo">Link to Photo Image (Required)</label>
+                <label for="friend-photo" id= "friend-photo">Link to Photo Image (Required)</label>
                 <input type="text" class="form-control" id="user-img">
               </div>
 
@@ -205,8 +205,8 @@
 
       // Here we grab the form elements
       var newFriend = {
-        name: $(".friend-name").val().trim(),
-        photo: $(".friend-photo").val().trim(),
+        name: $("#friend-name").val().trim(),
+        photo: $("#friend-photo").val().trim(),
         scores: [$("#inputState1").val(),$("#inputState2").val(),$("#inputState3").val(),$("#inputState4").val(),$("#inputState5").val(),$("#inputState6").val(),$("#inputState7").val(),$("#inputState8").val(),$("#inputState9").val(),$("#inputState10").val()]
       };
 
