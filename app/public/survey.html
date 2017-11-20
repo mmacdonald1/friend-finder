@@ -16,9 +16,9 @@
      <div class="container">
 
     <div class="jumbotron">
-      <h1 class="text-center"><span class="glyphicon glyphicon-user"></span> Friend Finder</h1>
+      <h1 class="text-center"></span>Dog Friend Finder</h1>
       <hr>
-      <h2 class="text-center">Find your fovever friend!</h2>
+      <h2 class="text-center">Find your forever friend!</h2>
       <br>
 
       <div class="text-center">
@@ -32,25 +32,25 @@
         <!-- Reservation Page -->
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title">Table Reservation</h4>
+            <h4 class="panel-title">Survey</h4>
           </div>
           <div class="panel-body">
 
             <form role="form">
 
               <div class="form-group">
-                <label for="reserve-name">Name (Required)</label>
+                <label for="friend-name">Name (Required)</label>
                 <input type="text" class="form-control" id="user-name">
               </div>
 
               <div class="form-group">
-                <label for="reserve-phone">Link to Photo Image (Required)</label>
+                <label for="friend-photo">Link to Photo Image (Required)</label>
                 <input type="text" class="form-control" id="user-img">
               </div>
 
                <div class="form-group">
                   <label for="inputState">It's Friday, you ready for a good snuggle?</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState1" class="form-control">
                     <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="form-group">
                   <label for="inputState">Squirrels are friends not food.</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState2" class="form-control">
                    <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="form-group">
                   <label for="inputState">No one else can play with my favorite toy.</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState3" class="form-control">
                    <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="form-group">
                   <label for="inputState">Water is so fun.</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState4" class="form-control">
                    <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -89,8 +89,8 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="inputState">Every outside my fence is an enemy.</label>
-                  <select id="inputState" class="form-control">
+                  <label for="inputState">Everyone on the other side is an enemy.</label>
+                  <select id="inputState5" class="form-control">
                     <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="form-group">
                   <label for="inputState">No new friends. I got my clique.</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState6" class="form-control">
                   <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="form-group">
                   <label for="inputState">I love adventuring.</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState7" class="form-control">
                     <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="form-group">
                   <label for="inputState">I will go any length to acquire food.</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState8" class="form-control">
                     <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="form-group">
                   <label for="inputState">Cats. We cool.</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState9" class="form-control">
                     <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="form-group">
                   <label for="inputState">I can't stand corny costumes.</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState10" class="form-control">
                     <option>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -148,18 +148,31 @@
                     <option>5 (Strongly Disagree)</option>
                   </select>
                 </div>
-                <div class="form-group">
-                  <label for="inputState">I love to show off my skills.</label>
-                  <select id="inputState" class="form-control">
-                    <option>1 (Strongly Agree)</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
-                  </select>
-                </div>
+        
 
-              <button type="submit" class="btn btn-primary submit">Submit</button>
+              <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#exampleModal">Submit</button>
+              
+              <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Your Friend Match Is:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                      <h4>Meet Your New BFF</h4>
+                        <h5 id="matchName"></h5>
+                        <img id="matchPic" src="" alt="No Image" width = 250px>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </form>
 
           </div>
@@ -178,8 +191,60 @@
   </div>
 
 </body>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Here we grab the form elements
+      var newFriend = {
+        name: $(".friend-name").val().trim(),
+        photo: $(".friend-photo").val().trim(),
+        scores: [$("#inputState1").val(),$("#inputState2").val(),$("#inputState3").val(),$("#inputState4").val(),$("#inputState5").val(),$("#inputState6").val(),$("#inputState7").val(),$("#inputState8").val(),$("#inputState9").val(),$("#inputState10").val()]
+      };
+
+      console.log(newFriend);
+        
+
+      // This line is the magic. It"s very similar to the standard ajax function we used.
+      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+      // depending on if a tables is available or not.
+
+      $.post("/api/friends", newFriend,
+        function(data) {
+          // Use data callback to display result.
+                if (data) {
+
+                    // Empty out modal and username and link fields.
+                    $('#matchName').val('');
+                    $('#matchPic').val('');
+                    
+                    $("#matchName").text(data.name);
+                    $("#matchPic").attr("src", data.photo);
+                }
+        
+          // Clear the form when submitting
+          $(".friend-name").val("");
+          $(".friend-photo").val("");
+          $(".form-group").val("");
+          
+          // Show the modal with the best match
+                $('.modal').modal();
+
+        });
+         
+
+    });
+
+</script>
+
 </html>
 
-    
-</body>
-</html>
