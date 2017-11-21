@@ -38,114 +38,114 @@
 
             <form role="form">
 
-              <div class="form-group">
-                <label for="friend-name" id="friend-name">Name (Required)</label>
+              <div class="form-group" >
+                <label for="friend-name">Name (Required)</label>
                 <input type="text" class="form-control" id="user-name">
               </div>
 
               <div class="form-group">
-                <label for="friend-photo" id= "friend-photo">Link to Photo Image (Required)</label>
+                <label for="friend-photo">Link to Photo Image (Required)</label>
                 <input type="text" class="form-control" id="user-img">
               </div>
 
                <div class="form-group">
                   <label for="inputState">It's Friday, you ready for a good snuggle?</label>
                   <select id="inputState1" class="form-control">
-                    <option>1 (Strongly Agree)</option>
+                    <option value = 1 >1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option  value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">Squirrels are friends not food.</label>
                   <select id="inputState2" class="form-control">
-                   <option>1 (Strongly Agree)</option>
+                   <option  value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">No one else can play with my favorite toy.</label>
                   <select id="inputState3" class="form-control">
-                   <option>1 (Strongly Agree)</option>
+                   <option  value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">Water is so fun.</label>
                   <select id="inputState4" class="form-control">
-                   <option>1 (Strongly Agree)</option>
+                   <option  value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">Everyone on the other side is an enemy.</label>
                   <select id="inputState5" class="form-control">
-                    <option>1 (Strongly Agree)</option>
+                    <option  value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">No new friends. I got my clique.</label>
                   <select id="inputState6" class="form-control">
-                  <option>1 (Strongly Agree)</option>
+                  <option  value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">I love adventuring.</label>
                   <select id="inputState7" class="form-control">
-                    <option>1 (Strongly Agree)</option>
+                    <option value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">I will go any length to acquire food.</label>
                   <select id="inputState8" class="form-control">
-                    <option>1 (Strongly Agree)</option>
+                    <option value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">Cats. We cool.</label>
                   <select id="inputState9" class="form-control">
-                    <option>1 (Strongly Agree)</option>
+                    <option  value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="inputState">I can't stand corny costumes.</label>
                   <select id="inputState10" class="form-control">
-                    <option>1 (Strongly Agree)</option>
+                    <option  value = 1>1 (Strongly Agree)</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Strongly Disagree)</option>
+                    <option value = 5>5 (Strongly Disagree)</option>
                   </select>
                 </div>
         
@@ -205,9 +205,10 @@
 
       // Here we grab the form elements
       var newFriend = {
-        name: $("#friend-name").val().trim(),
-        photo: $("#friend-photo").val().trim(),
+        name: $("#user-name").val().trim(),
+        photo: $("#user-img").val().trim(),
         scores: [$("#inputState1").val(),$("#inputState2").val(),$("#inputState3").val(),$("#inputState4").val(),$("#inputState5").val(),$("#inputState6").val(),$("#inputState7").val(),$("#inputState8").val(),$("#inputState9").val(),$("#inputState10").val()]
+          
       };
 
       console.log(newFriend);
