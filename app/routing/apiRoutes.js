@@ -10,7 +10,7 @@ app.get("/api/friends", function(req,res){
 app.post("/api/friends", function(req, res){
 //This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.        
         
-var newFriendScores = req.body.scores;
+var newFriendScores = req.body;
     console.log(req.body);
 var scoresArray= [];
 var bestMatch = 0;
