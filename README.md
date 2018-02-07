@@ -1,6 +1,6 @@
 # Dog Friend Finder
 
-A quiz with and alogorithm to match you with a doggie best friend.
+A quiz with and algorithm to match you with a doggie best friend.
 
 ## Live Demo
 
